@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sola Construtora</title>
+  <meta name="description" content="Portal de empreendimentos — encontre seu lugar perfeito." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/sola.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container header-inner" style="align-items:center;">
+      <div class="mark" aria-hidden="true"><img src="img/logo-sola.png" alt=""></div>
+
+      <nav class="nav" role="navigation" aria-label="Principal">
+        <a href="#">Empreendimentos</a>
+        <a href="#">Institucional</a>
+        <a href="#">Bellagio Construções</a>
+        <a href="#">Blog</a>
+        <a href="#">Assistência técnica</a>
+        <a href="#">Trabalhe conosco</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO CAROUSEL -->
+  <main>
+    <section class="hero-carousel" aria-label="Destaques de imóveis">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1800&q=80');" role="img" aria-label="Ambiente residencial moderno">
+        <div class="hero-inner">
+          <div class="hero-text-wrapper">
+            <h1>ENCONTRE SEU LUGAR PERFEITO!</h1>
+            <p>Projetos pensados para bem-estar, conforto e segurança. Casas e apartamentos com acabamento de alto padrão, áreas de lazer e localização privilegiada.</p>
+            <a class="cta" href="#empreendimentos">Descubra o seu sonho</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');" role="img" aria-label="Apartamento moderno com varanda">
+        <div class="hero-inner">
+          <div class="hero-text-wrapper">
+            <h1>VIVA COM CONFORTO E ESTILO</h1>
+            <p>Apartamentos planejados para você e sua família, com ambientes integrados e design contemporâneo.</p>
+            <a class="cta" href="#empreendimentos">Veja os empreendimentos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1800&q=80');" role="img" aria-label="Casa com jardim e piscina">
+        <div class="hero-inner">
+          <div class="hero-text-wrapper">
+            <h1>SEU LAR <br> DOS SONHOS</h1>
+            <p>Casas espaçosas com jardim, piscina e áreas de lazer completas para aproveitar cada momento com a família.</p>
+            <a class="cta" href="#empreendimentos">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SEARCH BAR BELOW HERO -->
+    <div style="display:flex;justify-content:center;">
+      <div class="search-section" role="search" aria-label="Barra de busca de empreendimentos">
+        <div class="search-field" style="flex:1">
+          <div class="input-wrap" style="flex:1">
+            <label for="city">Cidade</label>
+            <input id="city" class="input" type="text" placeholder="Ex: Petrópolis">
+          </div>
+          <div class="input-wrap" style="width:220px">
+            <label for="neighborhood">Localidade</label>
+            <input id="neighborhood" class="input" type="text" placeholder="Ex: Centro, Nogueira">
+          </div>
+        </div>
+
+        <div class="search-actions">
+          
+          <button class="btn-search" aria-label="Pesquisar">
+  <i class="fas fa-search"></i> Buscar
+</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="empreendimentos" class="section" aria-labelledby="feat-title">
+      <h2 id="feat-title">Empreendimentos em destaque</h2>
+
+      <div class="cards-grid" role="list">
+        <!-- Cards 1 a 6 -->
+        <!-- Card 1 -->
+        <article class="card" role="listitem" aria-label="Empreendimento Jardim das Águas">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60" alt="Jardim das Águas - fachada">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Jardim das Águas</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress" aria-hidden="true"><span style="width:85%"></span></div>
+              <div class="small muted" style="margin-top:6px">85% • 42 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2024</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" role="listitem" aria-label="Empreendimento Deck Residence">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=60" alt="Deck Residence - piscina">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Deck Residence</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress" aria-hidden="true"><span style="width:60%"></span></div>
+              <div class="small muted" style="margin-top:6px">60% • 30 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Entrega 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" role="listitem" aria-label="Empreendimento Vila Verde">
+          <img src="https://images.unsplash.com/photo-1549187774-b4e9d1f1a2c2?auto=format&fit=crop&w=1200&q=60" alt="Vila Verde - jardim">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Vila Verde</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress" aria-hidden="true"><span style="width:92%"></span></div>
+              <div class="small muted" style="margin-top:6px">92% • 58 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2023</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" role="listitem" aria-label="Empreendimento Mirante Azul">
+          <img src="https://images.unsplash.com/photo-1505691723518-36a1fb2d8f27?auto=format&fit=crop&w=1200&q=60" alt="Mirante Azul - fachada e deck">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Mirante Azul</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress" aria-hidden="true"><span style="width:40%"></span></div>
+              <div class="small muted" style="margin-top:6px">40% • 12 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2025</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 5 (extra) -->
+        <article class="card extra" role="listitem" aria-label="Empreendimento Nova Vista" style="display:none">
+          <img src="https://images.unsplash.com/photo-1560185127-6b0c9b3ecb39?auto=format&fit=crop&w=1200&q=60" alt="Nova Vista - fachada">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Nova Vista</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress" aria-hidden="true"><span style="width:30%"></span></div>
+              <div class="small muted" style="margin-top:6px">30% • 10 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 6 (extra) -->
+        <article class="card extra" role="listitem" aria-label="Empreendimento Horizonte Azul" style="display:none">
+          <img src="https://images.unsplash.com/photo-1560185127-7d0c9b3ecb39?auto=format&fit=crop&w=1200&q=60" alt="Horizonte Azul - fachada">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Horizonte Azul</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress" aria-hidden="true"><span style="width:50%"></span></div>
+              <div class="small muted" style="margin-top:6px">50% • 20 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:22px; text-align:center">
+        <button id="loadMore" class="secondary-btn">Ver todos os empreendimentos</button>
+        <button id="hideExtras" class="secondary-btn" style="display:none; margin-left:10px;">Ocultar empreendimentos</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <!-- Coluna esquerda -->
+      <div class="contact">
+        <h4>Sola Construtora</h4>
+        <p>Rua das Flores, 123 — Petrópolis, RJ</p>
+        <p>Petrópolis / Administrativo (99) 9999-9999</p>
+        <p>Paraíba do Sul (24) 99999-9999</p>
+        <p>Três Rios (24) 99999-9999</p>
+        <p>Administração (24) 2221-4332</p>
+        <p>Email: <a href="mailto:contato@sola.com.br">contato@sola.com.br</a></p>
+      </div>
+
+      <!-- Coluna direita -->
+      <div class="footer-links">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="#">Obra por incorporação x Administração</a></li>
+          <li><a href="#">Financiamento Fácil</a></li>
+          <li><a href="#">Dicas para comprar o seu Imóvel</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Linha inferior -->
+    <div class="footer-bottom">
+      <p>© <strong>Sola Construtora</strong> — Todos os direitos reservados. Feito por PrimeWeb</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mostrar cards extras ao clicar
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadMoreBtn = document.getElementById('loadMore');
+      const extraCards = document.querySelectorAll('.cards-grid .extra');
+
+      loadMoreBtn.addEventListener('click', () => {
+        extraCards.forEach(card => card.style.display = 'flex'); // ou 'block', dependendo do seu CSS
+        loadMoreBtn.style.display = 'none';
+      });
+    });
+  </script>
+
+  <!-- Botões flutuantes -->
+  <div class="floating-buttons">
+    <a href="#" class="social chat" title="Chat">
+      <i class="fas fa-comment"></i>
+    </a>
+    <a href="https://wa.me/5599999999999" target="_blank" class="social whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/seuinsta" target="_blank" class="social instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="script.js"></script>
+</body>
+</html>
