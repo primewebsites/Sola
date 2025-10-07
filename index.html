@@ -13,7 +13,7 @@
 
   <!-- HEADER -->
   <header class="header" role="banner">
-    <div class="container header-inner">
+    <div class="container header-inner" style="align-items:center;">
       <div class="mark" aria-hidden="true"><img src="img/logo-sola.png" alt=""></div>
 
       <nav class="nav" role="navigation" aria-label="Principal">
@@ -70,8 +70,8 @@
     <!-- SEARCH BAR BELOW HERO -->
     <div style="display:flex;justify-content:center;">
       <div class="search-section" role="search" aria-label="Barra de busca de empreendimentos">
-        <div class="search-field">
-          <div class="input-wrap">
+        <div class="search-field" style="flex:1">
+          <div class="input-wrap" style="flex:1">
             <label for="city">Cidade</label>
             <input id="city" class="input" type="text" placeholder="Ex: Petrópolis">
           </div>
@@ -82,9 +82,11 @@
         </div>
 
         <div class="search-actions">
+          
           <button class="btn-search" aria-label="Pesquisar">
-            <i class="fas fa-search"></i> Buscar
-          </button>
+  <i class="fas fa-search"></i> Buscar
+</button>
+
         </div>
       </div>
     </div>
@@ -94,7 +96,7 @@
       <h2 id="feat-title">Empreendimentos em destaque</h2>
 
       <div class="cards-grid" role="list">
-        <!-- Cards 1 a 6 (incluindo extras) -->
+        <!-- Cards 1 a 6 -->
         <!-- Card 1 -->
         <article class="card" role="listitem" aria-label="Empreendimento Jardim das Águas">
           <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60" alt="Jardim das Águas - fachada">
@@ -218,7 +220,7 @@
 
       <div style="margin-top:22px; text-align:center">
         <button id="loadMore" class="secondary-btn">Ver todos os empreendimentos</button>
-        <button id="hideExtras" class="secondary-btn">Ocultar empreendimentos</button>
+        <button id="hideExtras" class="secondary-btn" style="display:none; margin-left:10px;">Ocultar empreendimentos</button>
       </div>
 
     </section>
@@ -258,6 +260,19 @@
     </div>
   </footer>
 
+  <script>
+    // Mostrar cards extras ao clicar
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadMoreBtn = document.getElementById('loadMore');
+      const extraCards = document.querySelectorAll('.cards-grid .extra');
+
+      loadMoreBtn.addEventListener('click', () => {
+        extraCards.forEach(card => card.style.display = 'flex'); // ou 'block', dependendo do seu CSS
+        loadMoreBtn.style.display = 'none';
+      });
+    });
+  </script>
+
   <!-- Botões flutuantes -->
   <div class="floating-buttons">
     <a href="#" class="social chat" title="Chat">
@@ -271,8 +286,8 @@
     </a>
   </div>
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome para os ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
