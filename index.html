@@ -9,22 +9,23 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/sola.png" type="image/x-icon">
 </head>
-<body>
+<body id="top">
 
   <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container header-inner" style="align-items:center;">
-      <div class="mark" aria-hidden="true"><img src="img/logo-sola.png" alt=""></div>
+      <div class="mark" aria-hidden="true">
+  <a href="#top"><img src="img/logo-sola.png" alt="Sola Construtora"></a>
+</div>
+
 
       <nav class="nav" role="navigation" aria-label="Principal">
-        <a href="#">Empreendimentos</a>
-        <a href="Institucional.html">Institucional</a>
-        <a href="#">Bellagio Construções</a>
-        <a href="#">Blog</a>
-        <a href="#">Assistência técnica</a>
-        <a href="#">Trabalhe conosco</a>
-        <a href="#">Contato</a>
-      </nav>
+  <a href="#empreendimentos">Empreendimentos</a>
+  <a href="#sobre-sola">Institucional</a>
+  <a href="#">Bellagio Construções</a>
+  <a href="#">Contato</a>
+</nav>
+
     </div>
   </header>
 
@@ -113,7 +114,7 @@
           </div>
           <div class="card-footer">
             <div class="small muted">Lançamento 2024</div>
-            <a class="secondary-btn" href="#">Ver detalhes</a>
+            <a class="secondary-btn" href="empreendimentos/jardim-das-aguas.html">Ver detalhes</a>
           </div>
         </article>
 
@@ -225,6 +226,55 @@
 
     </section>
   </main>
+<!-- SOBRE A EMPRESA -->
+<section class="sobre-sola" id="sobre-sola" aria-labelledby="sobre-title">
+  <div class="container">
+    <div class="sobre-content">
+
+      <!-- TEXTO -->
+      <div class="sobre-texto">
+        <h2>Sobre a Sola Construtora</h2>
+        <p>
+          A <strong>SOLA Construtora</strong> está no mercado há mais de 20 anos, com o objetivo de tornar possível o sonho da casa própria.
+          Atua de forma integrada nos setores residenciais e comerciais desde a incorporação, construção até a comercialização de seus imóveis.
+        </p>
+        <p>
+          Ao longo da nossa história já entregamos mais de <strong>3.000 unidades</strong>, representando mais de <strong>250.000 m²</strong> de área construída.
+          Com uma equipe altamente qualificada, nossa empresa constrói uma história de sucesso e confiança junto aos nossos clientes.
+        </p>
+      </div>
+
+      <!-- VÍDEO -->
+      <div class="sobre-video">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" title="Sola Construtora - Institucional" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- CARDS: MISSÃO, VISÃO, VALORES -->
+    <div class="blocks">
+      <div class="block">
+        <h3>Missão</h3>
+        <p>Construir imóveis de qualidade, transformando o sonho da casa própria em realidade.</p>
+      </div>
+      <div class="block">
+        <h3>Visão</h3>
+        <p>Ser reconhecida pelos nossos clientes como a melhor empresa de incorporação, construção e comercialização das regiões centro-sul e serrana do estado do Rio de Janeiro.</p>
+      </div>
+      <div class="block">
+        <h3>Valores</h3>
+        <ul>
+          <li>Empreendedorismo</li>
+          <li>Comprometimento</li>
+          <li>Superação</li>
+          <li>Melhoria contínua</li>
+          <li>Disciplina de capital</li>
+          <li>Respeito aos funcionários, fornecedores, clientes e meio ambiente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
@@ -242,15 +292,19 @@
       </div>
 
       <!-- Coluna direita -->
-      <div class="footer-links">
-        <h4>Informações</h4>
-        <ul>
-          <li><a href="#">Obra por incorporação x Administração</a></li>
-          <li><a href="#">Financiamento Fácil</a></li>
-          <li><a href="#">Dicas para comprar o seu Imóvel</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-        </ul>
-      </div>
+    <div class="footer-links">
+  <h4>Informações</h4>
+  <ul>
+    <li><a href="#">Obra por incorporação x Administração</a></li>
+    <li><a href="#">Financiamento Fácil</a></li>
+    <li><a href="#">Dicas para comprar o seu Imóvel</a></li>
+    <li><a href="#">Política de privacidade</a></li>
+    <li><a href="#">Assistência técnica</a></li>
+    <li><a href="#">Trabalhe conosco</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+</div>
+
 
     </div>
 
