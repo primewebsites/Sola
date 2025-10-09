@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empreendimentos - Sola Construtora</title>
+  <meta name="description" content="Conheça todos os empreendimentos da Sola Construtora — imóveis à venda e obras realizadas." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="empreendimentos.css">
+  <link rel="shortcut icon" href="img/sola.png" type="image/x-icon">
+
+  <style>
+    /* Efeito suave ao filtrar */
+    .card {
+      opacity: 1;
+      transition: opacity 0.4s ease, transform 0.3s ease;
+    }
+    .card.hide {
+      opacity: 0;
+      transform: scale(0.97);
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container header-inner" style="align-items:center;">
+      <div class="mark" aria-hidden="true">
+        <a href="index.html#top"><img src="img/logo-sola.png" alt="Sola Construtora"></a>
+      </div>
+      <nav class="nav" role="navigation" aria-label="Principal">
+        <a href="empreendimentos.html" class="active">Empreendimentos</a>
+        <a href="index.html#sobre-sola">Institucional</a>
+        <a href="#">Bellagio Construções</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-empreendimentos">
+    <section class="filtro-section">
+      <h1>Empreendimentos</h1>
+      <p>Conheça nossos imóveis disponíveis e empreendimentos já realizados.</p>
+
+      <div class="filtro-btns">
+        <button class="filtro-btn active" data-filter="todos">Todos</button>
+        <button class="filtro-btn" data-filter="venda">À venda</button>
+        <button class="filtro-btn" data-filter="realizados">Realizados</button>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="cards-grid">
+
+        <!-- À VENDA -->
+        <article class="card venda" role="listitem">
+          <img src="img-imoveis/reserve-cremerie.jpg" alt="Residencial Reserva Cremerie">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Reserva Cremerie</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress"><span style="width:85%"></span></div>
+              <div class="small muted" style="margin-top:6px">85% • 42 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2024</div>
+            <a class="secondary-btn" href="residencial-reserva-cremerie.html">Ver detalhes</a>
+          </div>
+        </article>
+
+        <article class="card venda" role="listitem">
+          <img src="img-imoveis/rosas-di-lazari.jpg" alt="Residencial Rosas Di Lazari">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Rosas Di Lazari</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress"><span style="width:60%"></span></div>
+              <div class="small muted" style="margin-top:6px">60% • 30 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Entrega 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <article class="card venda" role="listitem">
+          <img src="img-imoveis/bosque-serrano.jpg" alt="Residencial Bosque Serrano">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Bosque Serrano</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress"><span style="width:92%"></span></div>
+              <div class="small muted" style="margin-top:6px">92% • 58 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2023</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <article class="card venda" role="listitem">
+          <img src="img-imoveis/parque-dangelo.png" alt="Parque Dangelo - Terrenos">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Parque Dangelo - Terrenos</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress"><span style="width:40%"></span></div>
+              <div class="small muted" style="margin-top:6px">40% • 12 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2025</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <!-- REALIZADOS -->
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/torres da vila.jpg" alt="Residencial Torres da Vila">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Torres da Vila</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra concluída</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/245.jpg" alt="Residencial Taunay 245">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Taunay 245</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/878.jpg" alt="Residencial 878">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial 878</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/dangelo.jpg" alt="Residencial Vila D Angelo">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Vila D’Angelo</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/paraiba-do-sul.jpg" alt="Residencial Paraíba do Sul">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Paraíba do Sul</div>
+              <div class="card-sub">Paraíba do Sul, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/rubi2.jpg" alt="Residencial Rubi - Fase 2">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Rubi - Fase 2</div>
+              <div class="card-sub">Três Rios, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card realizados" role="listitem">
+          <img src="img-imoveis/vidabella.jpg" alt="Residencial Vidabella - Vagas de Garagem">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Vidabella - Vagas de Garagem</div>
+              <div class="card-sub">Três Rios, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Concluído</div>
+              <div class="progress"><span style="width:100%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXTRAS (antes ocultos) -->
+        <article class="card extra" role="listitem" aria-label="Peninsula Residencial">
+          <img src="img-imoveis/peninsula-residencial.jpg" alt="Peninsula Residencial">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Peninsula Residencial</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress"><span style="width:30%"></span></div>
+              <div class="small muted" style="margin-top:6px">30% • 10 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+        <article class="card extra" role="listitem" aria-label="Residencial Solar do Barão">
+          <img src="img-imoveis/solar-barão.jpg" alt="Residencial Solar do Barão">
+          <div class="card-body">
+            <div>
+              <div class="card-title">Residencial Solar do Barão</div>
+              <div class="card-sub">Petrópolis, RJ</div>
+            </div>
+            <div>
+              <div class="small muted">Obra em andamento</div>
+              <div class="progress"><span style="width:50%"></span></div>
+              <div class="small muted" style="margin-top:6px">50% • 20 unidades vendidas</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="small muted">Lançamento 2026</div>
+            <a class="secondary-btn" href="#">Ver detalhes</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="contact">
+        <h4>Sola Construtora</h4>
+        <p>Rua das Flores, 123 — Petrópolis, RJ</p>
+        <p>Petrópolis / Administrativo (99) 9999-9999</p>
+        <p>Paraíba do Sul (24) 99999-9999</p>
+        <p>Três Rios (24) 99999-9999</p>
+        <p>Email: <a href="mailto:contato@sola.com.br">contato@sola.com.br</a></p>
+      </div>
+      <div class="footer-links">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="#">Financiamento Fácil</a></li>
+          <li><a href="#">Dicas para comprar seu imóvel</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <strong>Sola Construtora</strong> — Todos os direitos reservados. Feito por PrimeWeb</p>
+    </div>
+  </footer>
+
+  <!-- JS FILTRO -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const botoes = document.querySelectorAll('.filtro-btn');
+      const cards = document.querySelectorAll('.card');
+
+      botoes.forEach(btn => {
+        btn.addEventListener('click', () => {
+          botoes.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filtro = btn.dataset.filter;
+
+          cards.forEach(card => {
+            if (filtro === 'todos' || card.classList.contains(filtro)) {
+              card.classList.remove('hide');
+              setTimeout(() => card.style.display = 'flex', 150);
+            } else {
+              card.classList.add('hide');
+              setTimeout(() => card.style.display = 'none', 400);
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
