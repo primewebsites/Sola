@@ -705,7 +705,7 @@ footer.site-footer {
 }
 @media (max-width: 480px) {
   nav.nav {
-    width: 20px;          /* largura fixa menor */
+    width: 100px;          /* largura fixa menor */
     padding: 60px 12px;    /* reduz padding para caber melhor */
   }
 
