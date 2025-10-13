@@ -290,13 +290,14 @@
     });
   });
 
-  // Menu hambúrguer
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav.nav');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav.nav');
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  document.body.classList.toggle('nav-open');
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');          // abre/fecha o menu
+    document.body.classList.toggle('nav-open'); // bloqueia scroll
+  });
 });
 
 </script>

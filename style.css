@@ -644,21 +644,39 @@ footer.site-footer {
 
 /* Nav escondido por padrão em mobile */
 @media (max-width: 1000px) {
-  .menu-toggle { display: flex; }
+  .menu-toggle {
+    display: flex; /* botão visível */
+  }
+
   nav.nav {
     position: fixed;
-    top: 0; right: -100%;
-    height: 100%;
-    width: 240px;
-    background: #fff;
+    top: 0;
+    right: -100%;       /* escondido fora da tela */
+    height: 100vh;      /* ocupa toda a altura */
+    width: 240px;       /* largura do menu */
+    background-color: #fff; /* fundo do menu */
     flex-direction: column;
-    padding: 60px 20px;
-    gap: 18px;
+    padding: 80px 20px;
+    gap: 20px;
     box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    z-index: 99;
     transition: right 0.3s ease;
-    z-index: 90;
+    display: flex;
   }
-  nav.nav.active { right: 0; }
-  nav.nav a { font-size: 16px; padding: 12px 0; display: block; }
-  body.nav-open { overflow: hidden; } /* desativa scroll quando menu aberto */
+
+  nav.nav.active {
+    right: 0; /* menu aparece */
+  }
+
+  nav.nav a {
+    color: #222;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 0;
+    display: block;
+  }
+
+  body.nav-open {
+    overflow: hidden;  /* impede scroll quando menu aberto */
+  }
 }
