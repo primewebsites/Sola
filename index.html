@@ -295,11 +295,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const nav = document.querySelector('nav.nav');
 
   menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    document.body.classList.toggle('nav-open');
-
-    // animação do hambúrguer
-    menuToggle.classList.toggle('open');
+    nav.classList.toggle('active');          // abre/fecha menu
+    document.body.classList.toggle('nav-open'); // bloqueia scroll
+    menuToggle.classList.toggle('open');     // animação X
   });
 });
 
