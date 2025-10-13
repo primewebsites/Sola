@@ -658,7 +658,7 @@ footer.site-footer {
     padding: 80px 20px;
     gap: 20px;
     box-shadow: -4px 0 20px rgba(0,0,0,0.1);
-    transition: right 0.3s ease;
+    transition: right 0.2s ease;
     z-index: 1000;
   }
 
@@ -678,22 +678,28 @@ footer.site-footer {
     overflow: hidden; /* impede scroll quando menu aberto */
   }
 }
-.menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-/* Animação para transformar em X */
-.menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+@media (max-width: 1000px) {
+  nav.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;       /* esconde fora da tela */
+    height: 100vh;      /* ocupa toda a altura */
+    width: 240px;       /* largura do menu */
+    background-color: #fff; 
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 20px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    display: flex;      /* precisa ser flex */
+  }
+
+  nav.nav.active {
+    right: 0;  /* menu aparece */
+  }
+
+  .menu-toggle {
+    display: flex; /* botão visível */
+  }
 }
