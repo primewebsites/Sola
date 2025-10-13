@@ -67,6 +67,8 @@ nav.nav a {
 }
 nav.nav a:hover { background: rgba(0,0,0,0.03); }
 
+
+
 /* ============================
    Hero
    ============================ */
@@ -617,4 +619,46 @@ footer.site-footer {
 @media (min-width: 1600px) {
   .hero-inner { max-width: 1400px; }
   .cards-grid { grid-template-columns: repeat(5,1fr); gap: 24px; }
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none; /* só aparece em telas pequenas */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+}
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+/* Nav escondido por padrão em mobile */
+@media (max-width: 1000px) {
+  .menu-toggle { display: flex; }
+  nav.nav {
+    position: fixed;
+    top: 0; right: -100%;
+    height: 100%;
+    width: 240px;
+    background: #fff;
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 18px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 90;
+  }
+  nav.nav.active { right: 0; }
+  nav.nav a { font-size: 16px; padding: 12px 0; display: block; }
+  body.nav-open { overflow: hidden; } /* desativa scroll quando menu aberto */
 }

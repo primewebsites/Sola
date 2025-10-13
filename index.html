@@ -17,6 +17,12 @@
       <div class="mark" aria-hidden="true">
         <a href="#top"><img src="img/logo-sola.png" alt="Sola Construtora"></a>
       </div>
+        <button class="menu-toggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
       <nav class="nav" role="navigation" aria-label="Principal">
         <a href="empreendimentos.html">Empreendimentos</a>
         <a href="#sobre-sola">Institucional</a>
@@ -283,6 +289,16 @@
       }, 400);
     });
   });
+
+  // Menu hambúrguer
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav.nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  document.body.classList.toggle('nav-open');
+});
+
 </script>
 
 
