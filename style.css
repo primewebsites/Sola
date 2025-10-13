@@ -703,3 +703,14 @@ footer.site-footer {
     display: flex; /* botão visível */
   }
 }
+@media (max-width: 480px) {
+  nav.nav {
+    width: 100%;       /* ocupa toda a largura */
+    padding: 60px 16px; /* reduz padding top e laterais */
+  }
+
+  nav.nav a {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
