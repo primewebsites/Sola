@@ -171,12 +171,12 @@
 }
 @media (max-width: 480px) {
   nav.nav {
-    width: 100%;       /* ocupa toda a largura */
-    padding: 60px 16px; /* reduz padding top e laterais */
+    width: 200px;          /* largura fixa menor */
+    padding: 60px 12px;    /* reduz padding para caber melhor */
   }
 
   nav.nav a {
-    font-size: 16px;
-    padding: 12px 0;
+    font-size: 15px;       /* texto um pouco menor */
+    padding: 10px 0;       /* espaçamento menor entre links */
   }
 }
