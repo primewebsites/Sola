@@ -109,3 +109,63 @@
   transform: scale(1.1);
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
+/* Menu mobile escondido */
+@media (max-width: 1000px) {
+  .menu-toggle { display: flex; }
+
+  nav.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 240px;
+    background: #fff;
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 20px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    transition: right 0.2s ease;
+    z-index: 1000;
+  }
+
+  nav.nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #222;
+    padding: 12px 0;
+    display: block;
+  }
+
+  nav.nav.active {
+    right: 0;
+  }
+
+  body.nav-open {
+    overflow: hidden; /* impede scroll quando menu aberto */
+  }
+}
+@media (max-width: 1000px) {
+  nav.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;       /* esconde fora da tela */
+    height: 100vh;      /* ocupa toda a altura */
+    width: 240px;       /* largura do menu */
+    background-color: #fff; 
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 20px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    display: flex;      /* precisa ser flex */
+  }
+
+  nav.nav.active {
+    right: 0;  /* menu aparece */
+  }
+
+  .menu-toggle {
+    display: flex; /* botão visível */
+  }
+}

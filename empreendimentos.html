@@ -32,7 +32,15 @@
       <div class="mark" aria-hidden="true">
         <a href="index.html#top"><img src="img/logo-sola.png" alt="Sola Construtora"></a>
       </div>
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+
       <nav class="nav" role="navigation" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
         <a href="empreendimentos.html" class="active">Empreendimentos</a>
         <a href="index.html#sobre-sola">Institucional</a>
         <a href="#">Contato</a>
@@ -367,6 +375,15 @@
         });
       });
     });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav.nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');          // abre/fecha menu
+  document.body.classList.toggle('nav-open'); // bloqueia scroll
+});
+
   </script>
 
   <!-- Font Awesome -->
