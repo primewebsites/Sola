@@ -155,6 +155,37 @@ nav.nav a:hover { background: rgba(0,0,0,0.03); }
   background: transparent; border: 1px solid rgba(0,0,0,0.06);
   padding: 10px 12px; border-radius: 10px; font-weight: 600;
 }
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .search-section {
+    flex-direction: column;
+    padding: 12px;
+    margin: -18px auto 18px;
+  }
+  
+  .search-field {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .input-wrap {
+    width: 100% !important;
+  }
+
+  .search-actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .btn-search {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
 
 /* ============================
    Featured Section & Cards
@@ -271,10 +302,8 @@ nav.nav a:hover { background: rgba(0,0,0,0.03); }
 .sobre-sola .block h3 {
   margin-top: 0;
   color:var(--red)
-  font-size: 20px;
-  margin-bottom: 15px;
+  
 }
-
 .sobre-sola .block p,
 .sobre-sola .block ul li {
   font-size: 15px;
